@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الشيخ — أسئلة إسلامية وفتاوى شرعية وأحكام فقهية</title>
+
+  <!-- ═══ SEO META TAGS ═══ -->
+  <meta name="description" content="الشيخ — موقع إسلامي للإجابة على الأسئلة الشرعية والفتاوى الفقهية على منهج أهل السنة والجماعة، مستنداً إلى القرآن الكريم والسنة النبوية الصحيحة." />
+  <meta name="keywords" content="أسئلة إسلامية، فتاوى شرعية، أحكام فقهية، الشيخ، فقه إسلامي، أهل السنة، القرآن الكريم، السنة النبوية، حكم شرعي، فتوى، إسلام، فقه، عبادات، معاملات" />
+  <meta name="author" content="الشيخ" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Arabic" />
+  <link rel="canonical" href="https://alsheikh.vercel.app/" />
+
+  <!-- ═══ OPEN GRAPH (مشاركة على الشبكات الاجتماعية) ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="الشيخ — أسئلة إسلامية وفتاوى شرعية" />
+  <meta property="og:description" content="اسأل عن دينك وتلقَّ إجابات شرعية مستندة إلى القرآن الكريم والسنة النبوية على منهج أهل السنة والجماعة." />
+  <meta property="og:url" content="https://alsheikh.vercel.app/" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:site_name" content="الشيخ" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="الشيخ — أسئلة إسلامية وفتاوى شرعية" />
+  <meta name="twitter:description" content="اسأل عن دينك وتلقَّ إجابات شرعية مستندة إلى القرآن الكريم والسنة النبوية." />
+
+  <!-- ═══ STRUCTURED DATA (JSON-LD) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "الشيخ",
+    "alternateName": ["Al-Sheikh", "أسئلة إسلامية", "فتاوى شرعية"],
+    "url": "https://alsheikh.vercel.app/",
+    "description": "موقع إسلامي للإجابة على الأسئلة الشرعية والفتاوى الفقهية على منهج أهل السنة والجماعة",
+    "inLanguage": "ar",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://alsheikh.vercel.app/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "فتاوى وأسئلة إسلامية شرعية",
+    "description": "إجابات شرعية على الأسئلة الإسلامية مستندة إلى القرآن الكريم والسنة النبوية الصحيحة على منهج أهل السنة والجماعة",
+    "inLanguage": "ar"
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-dim: #7a6230;
+      --emerald-deep: #0c2318;
+      --emerald-card: #162e22;
+      --cream: #f5f0e4;
+      --cream-muted: #c8bfa8;
+      --text-on-dark: #e8dfc8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--emerald-deep);
+      color: var(--text-on-dark);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.8;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(26,74,58,0.6) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpolygon points='40,5 52,28 78,28 57,44 65,70 40,55 15,70 23,44 2,28 28,28' fill='%23c9a84c'/%3E%3C/svg%3E");
+      background-size: 80px 80px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .page-wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 18px 80px;
+    }
+
+    /* HEADER */
+    header { text-align: center; padding: 52px 20px 36px; }
+    .bismillah {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      color: var(--gold);
+      display: block;
+      margin-bottom: 28px;
+      letter-spacing: 0.04em;
+    }
+    .divider { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 18px; }
+    .divider-line { flex: 1; max-width: 100px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dim), transparent); }
+    .divider-diamond { width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
+    h1 { font-family: 'Amiri', serif; font-size: clamp(2rem, 7vw, 3.2rem); font-weight: 700; color: var(--cream); line-height: 1.3; margin-bottom: 10px; }
+    h1 span { color: var(--gold); }
+
+    /* ── ORNAMENTAL LOGO ── */
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin: 0 auto 20px;
+      max-width: 480px;
+    }
+    .logo-top-ornament, .logo-bottom-ornament {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      justify-content: center;
+    }
+    .orn-line {
+      flex: 1;
+      max-width: 80px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .orn-star  { color: var(--gold); font-size: 0.65rem; opacity: 0.8; }
+    .orn-diamond { color: var(--gold); font-size: 0.55rem; }
+    .orn-diamond.small { font-size: 0.4rem; }
+    .orn-dot   { color: var(--gold-dim); font-size: 0.35rem; }
+
+    .logo-main {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 6px 20px;
+      border-top: 1px solid rgba(201,168,76,0.25);
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.05), transparent);
+    }
+    .logo-side-left, .logo-side-right {
+      color: var(--gold-dim);
+      font-size: 1.6rem;
+      line-height: 1;
+      opacity: 0.7;
+    }
+    .logo-side-right { transform: scaleX(-1); display: inline-block; }
+
+    .logo-text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .logo-above {
+      font-family: 'Amiri', serif;
+      font-size: 0.8rem;
+      color: var(--gold-dim);
+      letter-spacing: 0.15em;
+      opacity: 0.85;
+    }
+    .logo-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2.6rem, 9vw, 4rem);
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.1;
+      text-shadow:
+        0 0 40px rgba(201,168,76,0.4),
+        0 2px 8px rgba(0,0,0,0.5);
+      letter-spacing: 0.04em;
+      margin: 0;
+    }
+    .logo-below {
+      font-family: 'Amiri', serif;
+      font-size: 0.78rem;
+      color: var(--cream-muted);
+      letter-spacing: 0.08em;
+      opacity: 0.75;
+    }
+    .subtitle { font-size: 0.95rem; color: var(--cream-muted); font-weight: 300; margin-bottom: 8px; }
+    .badge { display: inline-block; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-size: 0.78rem; padding: 4px 14px; border-radius: 20px; margin-top: 8px; }
+
+    /* SETUP */
+    .setup-box { background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.25); border-radius: 14px; padding: 22px 24px; margin-bottom: 28px; }
+    .setup-box h3 { color: var(--gold); font-size: 0.95rem; margin-bottom: 12px; }
+    .setup-row { display: flex; gap: 10px; }
+    .setup-input { flex: 1; background: rgba(0,0,0,0.3); border: 1px solid rgba(201,168,76,0.2); border-radius: 8px; padding: 10px 14px; color: var(--cream); font-family: 'Cairo', sans-serif; font-size: 0.88rem; direction: ltr; text-align: left; outline: none; transition: border-color 0.2s; }
+    .setup-input:focus { border-color: var(--gold); }
+    .setup-input::placeholder { color: rgba(200,191,168,0.4); }
+    .btn-save { background: var(--gold); color: var(--emerald-deep); border: none; border-radius: 8px; padding: 10px 20px; font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 0.88rem; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+    .btn-save:hover { background: var(--gold-light); }
+    .key-saved { display: none; align-items: center; gap: 8px; color: #6fcf97; font-size: 0.85rem; margin-top: 10px; }
+    .key-saved.show { display: flex; }
+
+    /* QUICK PILLS */
+    .quick-section { margin-bottom: 28px; }
+    .quick-label { font-size: 0.82rem; color: var(--cream-muted); margin-bottom: 12px; text-align: center; }
+    .quick-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .pill { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.2); border-radius: 24px; padding: 7px 16px; font-size: 0.82rem; color: var(--cream-muted); cursor: pointer; transition: all 0.2s; }
+    .pill:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); color: var(--gold-light); transform: translateY(-1px); }
+
+    /* INPUT */
+    .input-card { background: var(--emerald-card); border: 1px solid rgba(201,168,76,0.18); border-radius: 16px; padding: 20px; margin-bottom: 28px; box-shadow: 0 4px 32px rgba(0,0,0,0.3); }
+    .input-label { font-size: 0.85rem; color: var(--cream-muted); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+    textarea { width: 100%; min-height: 110px; background: rgba(0,0,0,0.25); border: 1px solid rgba(201,168,76,0.15); border-radius: 10px; padding: 14px 16px; color: var(--cream); font-family: 'Cairo', sans-serif; font-size: 1rem; line-height: 1.7; resize: vertical; outline: none; transition: border-color 0.2s; direction: rtl; }
+    textarea:focus { border-color: var(--gold); }
+    textarea::placeholder { color: rgba(200,191,168,0.35); }
+    .input-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; flex-wrap: wrap; gap: 10px; }
+    .char-count { font-size: 0.78rem; color: var(--cream-muted); opacity: 0.6; }
+    .btn-ask { background: linear-gradient(135deg, var(--gold), #a8822a); color: var(--emerald-deep); border: none; border-radius: 10px; padding: 12px 32px; font-family: 'Cairo', sans-serif; font-weight: 900; font-size: 1rem; cursor: pointer; transition: all 0.25s; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(201,168,76,0.25); }
+    .btn-ask:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+    .btn-ask:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* ANSWER */
+    #answer-section { display: none; }
+    #answer-section.show { display: block; }
+    .answer-card { background: var(--emerald-card); border: 1px solid rgba(201,168,76,0.22); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.35); animation: fadeSlide 0.4s ease; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .answer-header { background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04)); border-bottom: 1px solid rgba(201,168,76,0.15); padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+    .answer-header-icon { width: 36px; height: 36px; background: rgba(201,168,76,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.1rem; flex-shrink: 0; }
+    .answer-header-title { font-size: 0.9rem; font-weight: 700; color: var(--gold-light); }
+    .answer-header-sub { font-size: 0.75rem; color: var(--cream-muted); margin-top: 2px; }
+    .answer-body { padding: 24px 26px; font-size: 1rem; line-height: 2; color: var(--text-on-dark); white-space: pre-wrap; font-family: 'Cairo', sans-serif; }
+    .answer-footer { border-top: 1px solid rgba(201,168,76,0.1); padding: 14px 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .disclaimer { font-size: 0.75rem; color: var(--cream-muted); opacity: 0.7; }
+    .btn-copy { background: transparent; border: 1px solid rgba(201,168,76,0.25); border-radius: 7px; padding: 6px 14px; color: var(--cream-muted); font-family: 'Cairo', sans-serif; font-size: 0.78rem; cursor: pointer; transition: all 0.2s; }
+    .btn-copy:hover { border-color: var(--gold); color: var(--gold-light); }
+
+    /* LOADING */
+    .loading-card { background: var(--emerald-card); border: 1px solid rgba(201,168,76,0.18); border-radius: 16px; padding: 40px 24px; text-align: center; display: none; }
+    .loading-card.show { display: block; }
+    .loading-dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 16px; }
+    .dot { width: 10px; height: 10px; background: var(--gold); border-radius: 50%; animation: bounce 1.3s ease-in-out infinite; }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes bounce { 0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; } 40% { transform: scale(1); opacity: 1; } }
+    .loading-text { color: var(--cream-muted); font-size: 0.9rem; }
+
+    /* ERROR */
+    .error-card { background: rgba(220,53,69,0.08); border: 1px solid rgba(220,53,69,0.3); border-radius: 12px; padding: 18px 22px; color: #f8d7da; font-size: 0.9rem; display: none; margin-bottom: 20px; }
+    .error-card.show { display: flex; align-items: flex-start; gap: 10px; }
+
+    /* HISTORY */
+    .history-section { margin-top: 40px; }
+    .history-title { font-size: 0.88rem; color: var(--cream-muted); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .history-title::before, .history-title::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.12); }
+    .history-item { background: rgba(255,255,255,0.02); border: 1px solid rgba(201,168,76,0.1); border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s; }
+    .history-item:hover { background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.25); }
+    .history-q { font-size: 0.88rem; color: var(--gold-light); font-weight: 600; margin-bottom: 4px; }
+    .history-preview { font-size: 0.8rem; color: var(--cream-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+footer { text-align: center; padding: 30px 20px; font-size: 0.78rem; color: var(--cream-muted); opacity: 0.5; border-top: 1px solid rgba(201,168,76,0.08); margin-top: 50px; }
+
+    @media (max-width: 500px) {
+      .setup-row { flex-direction: column; }
+      .btn-ask { width: 100%; justify-content: center; }
+      .input-footer { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <header>
+    <span class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</span>
+
+    <div class="logo-wrap">
+      <div class="logo-top-ornament">
+        <span class="orn-line"></span>
+        <span class="orn-star">✦</span>
+        <span class="orn-diamond">◆</span>
+        <span class="orn-star">✦</span>
+        <span class="orn-line"></span>
+      </div>
+
+      <div class="logo-main">
+        <span class="logo-side-left">❧</span>
+        <div class="logo-text-wrap">
+          <span class="logo-above">— مَوْقِعُ —</span>
+          <h1 class="logo-title">ٱلشَّيْخ</h1>
+          <span class="logo-below">لِلْفَتَاوَى وَالأَحْكَامِ الشَّرْعِيَّة</span>
+        </div>
+        <span class="logo-side-right">❧</span>
+      </div>
+
+      <div class="logo-bottom-ornament">
+        <span class="orn-line"></span>
+        <span class="orn-dot">●</span>
+        <span class="orn-diamond small">◆</span>
+        <span class="orn-dot">●</span>
+        <span class="orn-line"></span>
+      </div>
+    </div>
+
+    <p class="subtitle">اسأل عن دينك — إجابات مستندة إلى القرآن والسنة النبوية</p>
+    <span class="badge">🕌 على منهج أهل السنة والجماعة</span>
+  </header>
+
+  <!-- QUICK PILLS -->
+  <div class="quick-section">
+    <p class="quick-label">✦ أسئلة شائعة — اضغط للتجربة</p>
+    <div class="quick-pills">
+      <span class="pill" onclick="fillQuestion('ما حكم الصلاة في وقتها وما هي شروطها؟')">🕌 شروط الصلاة</span>
+      <span class="pill" onclick="fillQuestion('ما هي أركان الإسلام الخمسة؟')">📖 أركان الإسلام</span>
+      <span class="pill" onclick="fillQuestion('ما حكم الزكاة ومن تجب عليه؟')">💰 الزكاة</span>
+      <span class="pill" onclick="fillQuestion('ما فضل قراءة القرآن الكريم؟')">📿 فضل القرآن</span>
+      <span class="pill" onclick="fillQuestion('ما هي شروط الحج وهل هو فرض على كل مسلم؟')">🕋 فريضة الحج</span>
+      <span class="pill" onclick="fillQuestion('ما حكم الصيام في رمضان وما شروطه؟')">🌙 الصيام</span>
+    </div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="input-card">
+    <div class="input-label"><span style="color:var(--gold);">✦</span> اكتب سؤالك الديني</div>
+    <textarea
+      id="question-input"
+      placeholder="مثال: ما حكم الصلاة في الطائرة؟ أو ما الفرق بين الزكاة والصدقة؟"
+      oninput="updateCount()"
+      onkeydown="handleKey(event)"
+      maxlength="1000"
+    ></textarea>
+    <div class="input-footer">
+      <span class="char-count" id="char-count">0 / 1000</span>
+      <button class="btn-ask" id="ask-btn" onclick="askQuestion()">
+        ☪ اسأل الآن
+      </button>
+    </div>
+  </div>
+
+  <!-- LOADING -->
+  <div class="loading-card" id="loading-card">
+    <div class="loading-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <p class="loading-text">جارٍ البحث في المصادر الإسلامية…</p>
+  </div>
+
+  <!-- ERROR -->
+  <div class="error-card" id="error-card">
+    <span>⚠️</span><span id="error-msg"></span>
+  </div>
+
+  <!-- ANSWER -->
+  <div id="answer-section">
+    <div class="answer-card">
+      <div class="answer-header">
+        <div class="answer-header-icon">☪</div>
+        <div>
+          <div class="answer-header-title">الإجابة الشرعية</div>
+          <div class="answer-header-sub" id="question-label"></div>
+        </div>
+      </div>
+      <div class="answer-body" id="answer-body"></div>
+      <div class="answer-footer">
+        <span class="disclaimer">⚠️ للمسائل الشخصية الدقيقة راجع عالم دين متخصص</span>
+        <button class="btn-copy" onclick="copyAnswer()">📋 نسخ الإجابة</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="history-section" id="history-section" style="display:none;">
+    <div class="history-title">الأسئلة السابقة</div>
+    <div id="history-list"></div>
+  </div>
+
+</div>
+
+<footer>ٱلشَّيْخ — للتوجيه الديني العام · الإجابات مستندة إلى القرآن الكريم والسنة النبوية الشريفة على منهج أهل السنة والجماعة</footer>
+
+<script>
+  let history = JSON.parse(localStorage.getItem('alsheikh_history') || '[]');
+
+  window.onload = () => { renderHistory(); };
+
+  function updateCount() {
+    const len = document.getElementById('question-input').value.length;
+    document.getElementById('char-count').textContent = `${len} / 1000`;
+  }
+
+  function handleKey(e) { if (e.key === 'Enter' && e.ctrlKey) askQuestion(); }
+
+  function fillQuestion(q) {
+    document.getElementById('question-input').value = q;
+    updateCount();
+    document.getElementById('question-input').focus();
+  }
+
+  async function askQuestion() {
+    const question = document.getElementById('question-input').value.trim();
+    if (!question) { showError('من فضلك اكتب سؤالك أولاً.'); return; }
+
+    setLoading(true);
+    hideAll();
+
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        showError('حدث خطأ: ' + (data?.error || `كود الخطأ ${res.status}`));
+        return;
+      }
+
+      showAnswer(question, data.answer);
+      addToHistory(question, data.answer);
+
+    } catch (e) {
+      showError('تعذّر الاتصال. تحقق من اتصالك بالإنترنت.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function setLoading(on) {
+    document.getElementById('loading-card').classList.toggle('show', on);
+    const btn = document.getElementById('ask-btn');
+    btn.disabled = on;
+    btn.textContent = on ? 'جارٍ البحث…' : '☪ اسأل الآن';
+  }
+
+  function hideAll() {
+    document.getElementById('answer-section').classList.remove('show');
+    document.getElementById('error-card').classList.remove('show');
+  }
+
+  function showError(msg) {
+    document.getElementById('error-msg').textContent = msg;
+    document.getElementById('error-card').classList.add('show');
+  }
+
+  function showAnswer(q, answer) {
+    document.getElementById('question-label').textContent = q;
+    document.getElementById('answer-body').textContent = answer;
+    document.getElementById('answer-section').classList.add('show');
+    document.getElementById('answer-section').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function copyAnswer() {
+    navigator.clipboard.writeText(document.getElementById('answer-body').textContent).then(() => {
+      const btn = document.querySelector('.btn-copy');
+      btn.textContent = '✅ تم النسخ';
+      setTimeout(() => { btn.textContent = '📋 نسخ الإجابة'; }, 2000);
+    });
+  }
+
+  function addToHistory(q, a) {
+    history.unshift({ q, a });
+    if (history.length > 10) history.pop();
+    localStorage.setItem('alsheikh_history', JSON.stringify(history));
+    renderHistory();
+  }
+
+  function renderHistory() {
+    if (!history.length) return;
+    document.getElementById('history-section').style.display = 'block';
+    document.getElementById('history-list').innerHTML = history.slice(0, 5).map((item, i) => `
+      <div class="history-item" onclick="loadHistory(${i})">
+        <div class="history-q">❓ ${item.q}</div>
+        <div class="history-preview">${item.a.slice(0, 100)}…</div>
+      </div>`).join('');
+  }
+
+  function loadHistory(i) {
+    const item = history[i];
+    document.getElementById('question-input').value = item.q;
+    updateCount();
+    showAnswer(item.q, item.a);
+  }
+</script>
+</body>
+</html>
